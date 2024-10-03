@@ -30,7 +30,7 @@ a {
 .page {
   max-width: 366px;
   margin: 0 auto;
-  border: 2px dashed #f5f5f5;
+  padding: 2px;
   font-family: Inter, sans-serif;
   font-weight: 400;
   background-color: black;
@@ -120,10 +120,17 @@ a {
   line-height: 21.6px;
 }
 
-.content-section {
-  padding: 37px 20px;
+.reasons {
   color: #131313;
   background-color: #fee42a;
+}
+
+.content-section {
+  padding: 39px 20px;
+}
+
+.content-section:nth-of-type(2) {
+  color: #f5f5f5;
 }
 
 .content-section__subtitle {
@@ -133,7 +140,7 @@ a {
 }
 
 .content-section__introduction {
-  padding: 32px 0;
+  padding: 32px 1px;
   font-size: 20px;
   line-height: 27px;
 }
@@ -153,4 +160,95 @@ a {
 
 .content-section__list-accent {
   font-weight: bold;
+}
+
+.how-to {
+  padding-bottom: 60px;
+  color: #f5f5f5;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 30px;
+  padding: 20px 19px 20px 20px;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.card_theme_dark {
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+}
+
+.card_text-only {
+  color: #131313;
+}
+
+.card__author {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__title {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29.7px;
+}
+
+.card__text {
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fee42a;
+  padding: 20px 22px 20px 20px;
+  padding-right: 22px;
+  color: #f5f5f5;
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17.5px;
+  list-style: none;
 }
