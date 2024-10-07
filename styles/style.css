@@ -28,9 +28,8 @@ a {
 }
 
 .page {
-  max-width: 366px;
+  max-width: 360px;
   margin: 0 auto;
-  border: 2px solid #f5f5f5;
   font-family: Inter, sans-serif;
   font-weight: 400;
   background-color: black;
@@ -53,7 +52,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 24px 20px 32px;
+  height: 132px;
+  padding: 25px 20px;
 }
 
 .header__menu-list {
@@ -84,15 +84,17 @@ a {
 }
 
 .cover {
-  min-height: 198px;
-  padding: 0 20px 34px;
+  margin-top: 8px;
+  padding-bottom: 30px;
+  padding-left: 21px;
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  background-position: 106% center;
+  background-size: 95% auto;
 }
 
 .cover__title {
+  padding-right: 24px;
   color: #fff;
   font-weight: 400;
   font-size: 72px;
@@ -100,8 +102,16 @@ a {
 }
 
 .intro__heading {
-  padding: 0 20px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 5px 20px 38px;
   color: #f5f5f5;
+}
+
+.intro__heading-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .intro__title {
@@ -110,13 +120,16 @@ a {
 }
 
 .intro__date {
-  position: relative;
-  left: 40px;
   white-space: nowrap;
 }
 
+.into__main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .intro__main-text {
-  padding-top: 24px;
   line-height: 21.6px;
 }
 
@@ -126,21 +139,21 @@ a {
 }
 
 .content-section {
-  padding: 39px 20px;
-}
-
-.content-section:nth-of-type(2) {
-  color: #f5f5f5;
+  /* padding: 40px 20px 40px 19px; */
+  color: #131313;
 }
 
 .content-section__subtitle {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 19px;
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 32.2px;
 }
 
 .content-section__introduction {
-  padding: 32px 1px;
+  padding: 31px 20px;
   font-size: 20px;
   line-height: 27px;
 }
@@ -149,8 +162,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 0;
-  padding: 0 4px 0 14px;
+  margin-top: 1.5px;
+  margin-bottom: 0;
+  padding-right: 22px;
+  padding-bottom: 40px;
+  padding-left: 34px;
 }
 
 .content-section__list-item {
@@ -163,25 +179,32 @@ a {
 }
 
 .how-to {
-  padding-bottom: 60px;
+  padding-bottom: 55px;
   color: #f5f5f5;
 }
 
 .cards-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin: 0;
+  gap: 31px;
+  margin-top: 3px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
+}
+
+.card-list__item {
+  padding: 20px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  margin-right: 22px;
+  margin-left: 19px;
   border-radius: 30px;
-  padding: 20px 19px 20px 20px;
+  padding: 19px 16px 23.5px 20px;
   font-size: 16px;
   line-height: 21.6px;
 }
@@ -200,6 +223,12 @@ a {
 
 .card__author {
   margin: 0;
+}
+
+.card__author-name {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21.6px;
