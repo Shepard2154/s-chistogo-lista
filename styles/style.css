@@ -30,22 +30,9 @@ a {
 .page {
   max-width: 360px;
   margin: 0 auto;
-  font-family: Inter, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-weight: 400;
   background-color: black;
-}
-
-.accent-span {
-  display: block;
-  font-family: 'EB Garamond', serif;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .header {
@@ -101,7 +88,20 @@ a {
   line-height: 1;
 }
 
-.intro__heading {
+.accent-span {
+  display: block;
+  font-family: 'EB Garamond', 'Times New Roman', serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -109,7 +109,7 @@ a {
   color: #f5f5f5;
 }
 
-.intro__heading-container {
+.intro__heading {
   display: flex;
   justify-content: space-between;
 }
@@ -139,7 +139,6 @@ a {
 }
 
 .content-section {
-  /* padding: 40px 20px 40px 19px; */
   color: #131313;
 }
 
@@ -246,7 +245,7 @@ a {
 }
 
 .card__title {
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', 'Times New Roman', serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 29.7px;
