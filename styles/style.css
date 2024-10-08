@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 360px;
+  margin: 0 auto;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 400;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 132px;
+  padding: 25px 20px;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  list-style: none;
+}
+
+.header__logo {
+  width: 78.45px;
+}
+
+.header__menu-item {
+  margin: 0;
+}
+
+.header__menu-link {
+  border-bottom: 1px solid currentColor;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+.header__menu-item_active .header__menu-link {
+  border-bottom: none;
+}
+
+.cover {
+  margin-top: 8px;
+  padding-bottom: 30px;
+  padding-left: 21px;
+  background-image: url(../images/cover.svg);
+  background-repeat: no-repeat;
+  background-position: 106% center;
+  background-size: 95% auto;
+}
+
+.cover__title {
+  padding-right: 24px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.accent-span {
+  display: block;
+  font-family: 'EB Garamond', 'Times New Roman', serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 5px 20px 38px;
+  color: #f5f5f5;
+}
+
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__title {
+  display: inline-block;
+  color: #ccc;
+}
+
+.intro__date {
+  white-space: nowrap;
+}
+
+.into__main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__main-text {
+  line-height: 21.6px;
+}
+
+.reasons {
+  color: #131313;
+  background-color: #fee42a;
+}
+
+.content-section {
+  color: #131313;
+}
+
+.content-section__subtitle {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 19px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32.2px;
+}
+
+.content-section__introduction {
+  padding: 31px 20px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.content-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 1.5px;
+  margin-bottom: 0;
+  padding-right: 22px;
+  padding-bottom: 40px;
+  padding-left: 34px;
+}
+
+.content-section__list-item {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.content-section__list-accent {
+  font-weight: bold;
+}
+
+.how-to {
+  padding-bottom: 55px;
+  color: #f5f5f5;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  margin-top: 3px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-list__item {
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 22px;
+  margin-left: 19px;
+  border-radius: 30px;
+  padding: 19px 16px 23.5px 20px;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.card_theme_dark {
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+}
+
+.card_text-only {
+  color: #131313;
+}
+
+.card__author {
+  margin: 0;
+}
+
+.card__author-name {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__title {
+  font-family: 'EB Garamond', 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29.7px;
+}
+
+.card__text {
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fee42a;
+  padding: 20px 22px 20px 20px;
+  padding-right: 22px;
+  color: #f5f5f5;
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17.5px;
+  list-style: none;
+}
